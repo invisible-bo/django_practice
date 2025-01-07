@@ -20,3 +20,6 @@ def hello(request):
         "books": books,
     }
     return render(request, "hello.html", context)
+
+def data_throw(request):
+    return render(request, "data_throw.html")
