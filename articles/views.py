@@ -23,3 +23,9 @@ def hello(request):
 
 def data_throw(request):
     return render(request, "data_throw.html")
+
+def profile(request, username):
+    context = {
+        "username" : username,
+    }
+    return render(request, "profile.html", context)

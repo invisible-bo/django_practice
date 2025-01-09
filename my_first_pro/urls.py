@@ -21,7 +21,8 @@ from articles import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', views.index),
-    path('users/', views.users),
     path('hello/', views.hello),
-    path('data_throw/', views.data_throw)
+    path('data_throw/', views.data_throw),
+    path('users/', views.users),
+    path('users/<username>/', views.profile),
 ]
